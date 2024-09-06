@@ -1,0 +1,16 @@
+autopep8
+Click
+Flask
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+pycodestyle
+Werkzeug
+firebase-admin
+Flask-HTTPAuth
+requests
+python-dotenv
+Pyrebase4
+requests-toolbelt
+setuptools
