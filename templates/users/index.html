@@ -1,0 +1,88 @@
+{% extends 'layout/base.html' %}
+
+{% block _style %}
+{% endblock %}
+
+{% block _content %}
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Daftar Users</h1>
+
+    <button type="button" class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#tambah_user">
+        Tambah User
+    </button>
+    <table class="table mt-2">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Username</th>
+                <th>Nama Lengkap</th>
+                <th>Role</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="align-middle">1</td>
+                <td class="align-middle">admin</td>
+                <td class="align-middle">Akun Admin</td>
+                <td class="align-middle">administrator</td>
+                <td class="align-middle">
+                    <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                    <a href="#" class="btn btn-danger btn-sm">Hapus</a>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+</div>
+
+
+
+<div class="modal fade" id="tambah_user" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-light">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah User</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="post">
+                <div class="modal-body">
+                    <div class="form-group mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" name="username" id="username" required placeholder="Masukkan username">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="nama_lengkap" class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" name="nama_lengkap" id="nama_lengkap" required placeholder="Masukkan Nama Lengkap">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" id="password" required placeholder="Masukkan Password">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="re-password" class="form-label">Ulangi Password</label>
+                        <input type="password" class="form-control" name="re-password" id="re-password" required placeholder="Ulangi Password">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="role" class="form-label">Role</label>
+                        <select class="form-select" required name="role" id="role">
+                            <option value="">-- Pilih Satu --</option>
+                            <option value="superadmin">Superadmin</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block _script %}
+{% endblock %}

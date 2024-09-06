@@ -1,0 +1,70 @@
+{% extends 'layout/base.html' %}
+
+{% block _style %}
+{% endblock %}
+
+{% block _content %}
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Lihat Mahasiswa</h1>
+
+    <a href="/mahasiswa" class="btn btn-success my-3">Kembali</a>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-12">
+                    <img src="/img/no_img.png" class="w-100" alt="">
+                </div>
+                <div class="col-md-8 col-12">
+                    <div class="mb-1 row">
+                        <label for="nama_lengkap" class="col-sm-4 col-form-label fw-bold">Nama Lengkap</label>
+                        <div class="col-sm-8">
+                            <input type="text" readonly class="form-control-plaintext" id="nama_lengkap"
+                                value="John Doe">
+                        </div>
+                    </div>
+                    <div class="mb-1 row">
+                        <label for="nim" class="col-sm-4 col-form-label fw-bold">NIM</label>
+                        <div class="col-sm-8">
+                            <input type="text" readonly class="form-control-plaintext" id="nim"
+                                value="1501158445">
+                        </div>
+                    </div>
+                    <div class="mb-1 row">
+                        <label for="tanggal_lahir" class="col-sm-4 col-form-label fw-bold">Tempat Tanggal Lahir</label>
+                        <div class="col-sm-8">
+                            <input type="text" readonly class="form-control-plaintext" id="tanggal_lahir"
+                                value="Makassar, 8 Oktober 2003">
+                        </div>
+                    </div>
+                    <div class="mb-1 row">
+                        <label for="kirisam" class="col-sm-4 col-form-label fw-bold">Jurusan</label>
+                        <div class="col-sm-8">
+                            <input type="text" readonly class="form-control-plaintext" id="kirisam"
+                                value="Sistem Informasi">
+                        </div>
+                    </div>
+                    <div class="mb-1 row">
+                        <label for="jenis_kelamin" class="col-sm-4 col-form-label fw-bold">Jenis Kelamin</label>
+                        <div class="col-sm-8">
+                            <input type="text" readonly class="form-control-plaintext" id="jenis_kelamin"
+                                value="Pria">
+                        </div>
+                    </div>
+                    <div class="mb-1 row align-items-center">
+                        <label for="status" class="col-sm-4 col-form-label fw-bold">Status</label>
+                        <div class="col-sm-8">
+                            <div class="badge bg-success">Aktif</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}
+
+{% block _script %}
+{% endblock %}

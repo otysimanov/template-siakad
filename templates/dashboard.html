@@ -1,0 +1,33 @@
+{% extends 'layout/base.html' %}
+
+{% block _style %}
+{% endblock %}
+
+{% block _content %}
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Dashboard</h1>
+    <div class="row mt-4">
+        <div class="col-12 col-md-4">
+            <div class="card p-3 bg-success text-light">
+                <p class="m-0 lead" style="font-size: 15px;">Jumlah Mahasiswa</p>
+                <h3 class="m-0">0 <span style="font-size: 15px;">Mahasiswa</span></h3>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card p-3 bg-warning">
+                <p class="m-0 lead" style="font-size: 15px;">Jumlah Dosen</p>
+                <h3 class="m-0">0 <span style="font-size: 15px;">Dosen</span></h3>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card p-3 bg-info">
+                <p class="m-0 lead" style="font-size: 15px;">Jumlah Jurusan</p>
+                <h3 class="m-0">0 <span style="font-size: 15px;">Jurusan</span></h3>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block _script %}
+{% endblock %}
